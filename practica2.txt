@@ -1,0 +1,41 @@
+using System;
+
+namespace Practica2
+{
+	class Program
+	{
+		
+		public static void Main(string[] args)
+		{
+			double producto1, producto2, producto3, res1, res2, res3, total;
+			
+			Console.WriteLine("El Precio del producto1 es:");
+			producto1 = double.Parse(Console.ReadLine());
+			
+			Console.WriteLine("El Precio del producto2 es:");
+			producto2 = double.Parse(Console.ReadLine());
+			
+			Console.WriteLine("El Precio del producto3 es:");
+			producto3 = double.Parse(Console.ReadLine());
+		
+		
+			res1 = producto1 * 0.16 + producto1;
+			Console.WriteLine("El Precio del producto1 con IVA \n= " + res1);
+			
+			res2 = producto2 * 0.16 + producto2;
+			Console.WriteLine("El Precio del producto2 con IVA \n= " + res2);
+			
+			res3 = producto3 * 0.16 + producto3;
+			Console.WriteLine("El Precio del producto3 con IVA \n= " + res3);
+			
+				
+			total = res1 + res2 + res3; 
+			Console.WriteLine("\nEl total de los productos con IVA incluido es: " + total );
+			
+			
+		
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
